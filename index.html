@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Jade Leaf | Bengaluru Rooftop</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="bg-layer" id="bg-js"></div>
+
+    <nav>
+        <div class="logo">THE JADE LEAF</div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#booking">Book Now</a>
+        </div>
+    </nav>
+
+    <header class="hero" id="home">
+        <div class="hero-content">
+            <p class="subtitle">Elevated Dining in Indiranagar</p>
+            <h1>The Urban <span>Jungle</span> Awaits</h1>
+            <p>Experience Bengaluru's finest organic fusion cuisine with a view.</p>
+            <a href="#booking" class="cta-btn">Find a Table</a>
+        </div>
+    </header>
+
+    <section class="menu-section" id="menu">
+    <div class="menu-container">
+        <h2 class="section-title">The Culinary Experience</h2>
+        
+        <div class="menu-category">
+            <h3><i class="fas fa-leaf"></i> Small Plates</h3>
+            <div class="grid">
+                <div class="menu-card" data-dish="Ghee Roast Arancini">
+                    <div class="card-header">
+                        <h4>Ghee Roast Arancini</h4>
+                        <span class="price">₹450</span>
+                    </div>
+                    <p>Mangalorean spiced chicken, creamy risotto, curry leaf aioli.</p>
+                </div>
+                <div class="menu-card" data-dish="Gunpowder Calamari">
+                    <div class="card-header">
+                        <h4>Gunpowder Calamari</h4>
+                        <span class="price">₹525</span>
+                    </div>
+                    <p>Crispy squid tossed in podi spice with a coconut-lime dip.</p>
+                </div>
+                <div class="menu-card" data-dish="Truffle Mushroom Galouti">
+                    <div class="card-header">
+                        <h4>Truffle Mushroom Galouti</h4>
+                        <span class="price">₹495</span>
+                    </div>
+                    <p>Melt-in-mouth smoked mushroom kebabs with truffle oil.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-category">
+            <h3><i class="fas fa-utensils"></i> Main Course</h3>
+            <div class="grid">
+                <div class="menu-card" data-dish="The Namma Burger">
+                    <div class="card-header">
+                        <h4>The Namma Burger</h4>
+                        <span class="price">₹650</span>
+                    </div>
+                    <p>Slow-cooked pulled lamb, Mysore chilli glaze, brioche bun.</p>
+                </div>
+                <div class="menu-card" data-dish="Alleppey Fish Curry">
+                    <div class="card-header">
+                        <h4>Alleppey Fish Curry</h4>
+                        <span class="price">₹780</span>
+                    </div>
+                    <p>Kingfish simmered in raw mango and coconut milk. Served with red rice.</p>
+                </div>
+                <div class="menu-card" data-dish="Pesto Paneer Tikka Pasta">
+                    <div class="card-header">
+                        <h4>Pesto Paneer Tikka Pasta</h4>
+                        <span class="price">₹595</span>
+                    </div>
+                    <p>Fettuccine in creamy basil pesto topped with charcoal-grilled paneer.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-category">
+            <h3><i class="fas fa-cocktail"></i> Rooftop Botanicals</h3>
+            <div class="grid">
+                <div class="menu-card" data-dish="Cubbon Spritz">
+                    <div class="card-header">
+                        <h4>Cubbon Spritz</h4>
+                        <span class="price">₹600</span>
+                    </div>
+                    <p>Gin, elderflower, cucumber, and fresh basil from our garden.</p>
+                </div>
+                <div class="menu-card" data-dish="Old Town Fashioned">
+                    <div class="card-header">
+                        <h4>Old Town Fashioned</h4>
+                        <span class="price">₹650</span>
+                    </div>
+                    <p>Bourbon infused with jaggery and orange bitters.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="booking-section" id="booking">
+    <div class="glass-form">
+        <h2 class="form-title">Book Now</h2> 
+        
+        <form id="booking-form">
+            <div class="input-group">
+                <input type="text" id="name" placeholder="Full Name" required>
+            </div>
+            <div class="input-group">
+                <input type="date" id="date" required>
+            </div>
+            <div class="input-group">
+                <select id="guests">
+                    <option value="2">2 Guests</option>
+                    <option value="4">4 Guests</option>
+                    <option value="6">6+ Guests</option>
+                </select>
+            </div>
+            <button type="submit" class="btn">Confirm Reservation</button>
+        </form>
+    </div>
+</section>
+<div class="glass-form">
+    
+    
+    <p id="spots-counter" style="color: var(--gold); margin-bottom: 20px; font-weight: bold;">
+        Loading available spots...
+    </p>
+
+    <form id="booking-form">
+        
+    </form>
+
+    <div id="success-message" style="display: none; margin-top: 20px; color: #4ade80;">
+        <i class="fas fa-check-circle"></i>
+        <h3>Reservation Confirmed!</h3>
+        <p>We've sent a confirmation to your email.</p>
+    </div>
+</div>
+<section class="contact-section" id="contact">
+    <div class="contact-container">
+        <h2 class="form-title">Find Us</h2>
+        
+        <div class="contact-grid">
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>12th Main Rd, HAL 2nd Stage,<br>Indiranagar, Bengaluru, 560038</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <p>+91 80 1234 5678</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>hello@thejadeleaf.in</p>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="map-box">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.922152643644!2d77.6382!3d12.9716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae16a6bbff5af9%3A0xad689721669e7150!2sIndiranagar%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1625000000000!5m2!1sen!2sin" 
+                    width="100%" height="300" style="border:0; border-radius: 15px;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <script src="script.js"></script>
+</body>
+</html>
